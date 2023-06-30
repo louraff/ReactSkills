@@ -1,4 +1,4 @@
-import "./SkillListItem.css";
+import "../styles/SkillListItem.css";
 
 function SkillListItem({skill}) {
     return(

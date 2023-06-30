@@ -1,10 +1,10 @@
 import SkillListItem from "./SkillListItem"
-import "./SkillList.css";
+import "../styles/SkillList.css";
 
 function SkillList({skills}) {
     return(
         <ul className="SkillList">
-            {skills.map((s) => <SkillListItem skill={s}/>)}
+            {skills.map((s, idx) => <SkillListItem skill={s} index={idx} key={idx}/>)}
         </ul>  
     )
 }
